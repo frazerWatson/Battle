@@ -7,6 +7,7 @@ class Battle < Sinatra::Base
 
   post '/names' do
     @player_1_name = params[:player_1_name]
+  #  @player_1_hit_points = 100
     @player_2_name = params[:player_2_name]
     erb :play
   end
