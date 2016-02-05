@@ -7,7 +7,7 @@ class Battle < Sinatra::Base
 
   get '/' do
     erb :index
-  end
+  end  
 
   post '/names' do
    player_1 = Player.new(params[:player_1_name])
